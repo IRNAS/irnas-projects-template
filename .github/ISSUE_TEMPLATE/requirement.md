@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**Mandatory:** yes (label as requirement-mandatory) or no (label as requirement-optional)
+**Mandatory:** yes/no
 
 **Requirement description:**
 A clear and concise description of the requirement
