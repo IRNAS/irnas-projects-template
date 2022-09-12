@@ -1,8 +1,8 @@
 ---
 name: Feature request
 about: Normal development issue on technical matters
-title: Feature
-labels: ''
+title: "<subject title related to the issue>"
+labels: Bug
 assignees: ''
 
 ---
