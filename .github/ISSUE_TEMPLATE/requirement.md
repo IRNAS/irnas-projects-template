@@ -2,7 +2,7 @@
 name: Requirement
 about: Confirmed requirement for the project
 title: "[USR001] - Requirement"
-labels: requirement
+labels: ''
 assignees: ''
 
 ---

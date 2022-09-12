@@ -2,7 +2,7 @@
 name: Feature request
 about: Normal development issue on technical matters
 title: Feature
-labels: feature
+labels: ''
 assignees: ''
 
 ---
