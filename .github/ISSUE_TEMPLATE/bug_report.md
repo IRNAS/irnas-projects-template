@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Create a report on what is not working but it should
-title: ''
+title: BUG - <subject title related to the issue>
 labels: bug
 assignees: ''
 
@@ -9,6 +9,10 @@ assignees: ''
 
 **Describe the bug**
 A clear and concise description of what the bug is.
+
+**Firmware/Software Version**
+
+**Hardware Version**
 
 **To Reproduce**
 Steps to reproduce the behavior:
