@@ -23,7 +23,7 @@ Example strikeout:
 
 ## After-review steps
 
-<!--- Optional section, delete section or select one option -->
+<!--- Delete section or select one option -->
 * Reviewer can merge and delete the branch.
 * I will merge PR by myself.
 
