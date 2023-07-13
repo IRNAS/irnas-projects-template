@@ -9,5 +9,5 @@ of CI workflows for release automation.
 - [ ] Provide a concise and accurate description of your project in the GitHub "description" field.
 - [ ] Provide a concise and accurate description of your project in this `README.md` file, replace the title.
 - [ ] Ensure that your project follows [repository naming scheme](https://github.com/IRNAS/irnas-guidelines-docs/blob/dev/docs/github_projects_guidelines.md#repository-naming-scheme-).
-- [ ] Turn on `gitlint` tool by following the instructions [here](https://github.com/IRNAS/irnas-guidelines-docs/tree/dev/tools/gitlint).
+- [ ] Turn on `gitlint` tool by running `gitlint install-hook`. If you do not have it yet, follow instructions [here](https://github.com/IRNAS/irnas-guidelines-docs/tree/dev/tools/gitlint).
 - [ ] As the final step delete this checklist and commit changes.
