@@ -2,7 +2,9 @@
 
 <!--- A summary of the changes that this PR introduces. Provide a relevant motivation and context about this PR or link an issue that provides it. -->
 
-Closes # Related #
+Closes #
+
+Related #
 
 ## Areas of interest for the reviewer
 
@@ -30,4 +32,4 @@ documentation.~~ - This PR introduced only internal facing changes.
 - I will merge PR by myself.
 
 [style guidelines]:
-  https://github.com/BA-RD-AIS/guidelines-docs/blob/main/docs/developer_guidelines.md
+  https://github.com/IRNAS/irnas-guidelines-docs/blob/main/docs/developer_guidelines.md
