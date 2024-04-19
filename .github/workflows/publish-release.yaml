@@ -32,7 +32,7 @@ jobs:
 
       - name: Publish Release
         if: ${{ !env.ACT }}
-        uses: softprops/action-gh-release@v0.1.15
+        uses: softprops/action-gh-release@v2.0.4
         with:
           tag_name: ${{ env.release_version }}
           body: |
