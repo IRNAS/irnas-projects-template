@@ -29,9 +29,24 @@ jobs:
         with:
           version: ${{ env.release_version_cut }}
 
+      - name: Prepare assets
+        run: |
+          if [ ! -d release ]; then
+              echo "No release directory found, skipping artifact preparation."
+          elif [ -z "$( ls -A 'release' )"  ]; then
+              echo "Release directory is empty, skipping artifact preparation."
+          else
+              mkdir -p artifacts
+              release_name=${{ github.event.repository.name }}-${{ env.release_version }}
+              mv assets ${release_name}
+              zip -r ${release_name}.zip ${release_name}/*
+              cp ${release_name}.zip artifacts
+          fi
+
       - name: Publish Release
         uses: softprops/action-gh-release@v2.2.1
         with:
+          files: artifacts/*
           tag_name: ${{ env.release_version }}
           body: |
             # Release notes
