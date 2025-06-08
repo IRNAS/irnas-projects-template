@@ -62,3 +62,26 @@ jobs:
     uses: ./.github/workflows/publish-release.yaml
     with:
       release_version: ${{ inputs.version }}
+
+  cleanup-on-failure:
+    # Only run cleanup if call-publish-release fails.
+    needs: call-publish-release
+    if: ${{ always() && contains(needs.call-publish-release.result, 'failure') }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.version }}
+          # Fetch two commits, so you can hard reset below
+          fetch-depth: 2
+
+      - name: Cleanup tag and Changelog
+        run: |
+          git config user.name "github-bot :robot:"
+          git config user.email noreply@github.com
+          git reset --hard HEAD~1
+          git push --force origin HEAD:main
+          git tag -d ${{ inputs.version }}
+          git push --delete origin  ${{ inputs.version }}
