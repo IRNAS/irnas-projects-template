@@ -55,9 +55,9 @@ of CI workflows for release automation.
 
 ## Repository folder structure
 
-- `doc/` - Project and development documentation.
-- `doc/images/` - Images used in the documentation, such as diagrams, screenshots, or logos.
-- `assets/` - Files that will be part of the next release. process.
+- `docs/` - Project and development documentation.
+- `docs/images/` - Images used in the documentation, such as diagrams, screenshots, or logos.
+- `assets/` - Files that will be part of the next release process.
 - `CHANGELOG.md` - Document used for tracking changes in the project. It follows the
   [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format.
 - `.github` - GitHub Actions workflows and other GitHub related files.
