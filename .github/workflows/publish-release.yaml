@@ -31,15 +31,16 @@ jobs:
 
       - name: Prepare assets
         run: |
-          if [ ! -d release ]; then
-              echo "No release directory found, skipping artifact preparation."
-          elif [ -z "$( ls -A 'release' )"  ]; then
+          if [ ! -d assets ]; then
+              echo "No assets directory found, skipping artifact preparation."
+          elif [ -z "$( ls -A 'assets' )"  ]; then
               echo "Release directory is empty, skipping artifact preparation."
           else
               mkdir -p artifacts
               release_name=${{ github.event.repository.name }}-${{ env.release_version }}
-              mv assets ${release_name}
-              zip -r ${release_name}.zip ${release_name}/*
+              mkdir ${release_name}
+              mv assets/* ${release_name}
+              zip -r ${release_name}.zip ${release_name}
               cp ${release_name}.zip artifacts
           fi
 
