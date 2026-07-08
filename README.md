@@ -24,10 +24,10 @@ of CI workflows for release automation.
 
 ### Tooling
 
-- [ ] Turn on `pre-commit` tool by running `pre-commit install`. If you do not have it yet, follow
-      instructions
-      [here](https://github.com/IRNAS/irnas-guidelines-docs/tree/main/tools/pre-commit). **Note**:
-      This tool is optional for mechanical and electronic projects.
+- [ ] Turn on `pre-commit` tool by running `pre-commit install`. If you do not have it yet **or the
+      command did not succeed** follow our [instructions].
+
+[instructions]: https://github.com/IRNAS/irnas-guidelines-docs/tree/main/tools/pre-commit
 
 ### Non-software projects
 
